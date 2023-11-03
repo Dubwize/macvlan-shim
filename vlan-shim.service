@@ -1,0 +1,8 @@
+#/etc/systemd/system/vlan-shim.service
+
+[Service]
+Type=simple
+ExecStart=/bin/sh /etc/vlan-shim.sh
+
+[Install]
+WantedBy=multi-user.target
